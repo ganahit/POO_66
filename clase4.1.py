@@ -1,9 +1,15 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Mar 26 09:47:05 2025
+Created on Mon Mar 31 10:27:36 2025
 
 @author: lab
 """
-def hi(name):
-    print("Hi,", name)
-hi("Anahi")
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.arange(0, 5, 0.1)
+y = np.sin(x)
+fig, ax = plt.subplots()
+ax.plot(x, y)
+plt.show()
